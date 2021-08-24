@@ -12,7 +12,7 @@ words into the sentence, then returns the sentence. */
 
 //Creating arrays for the message components
 const adjectiveArr = ['jovial', 'rustic', 'flatulent', 'easy going', 'cultured', 'sycophantic', 'determined', 'gargantuan', 'short', 'handsome'];
-const professionArr = ['doctor', 'pornstar', 'professor', 'pharmacist', 'hacker', 'samurai', 'skipper', 'flame eater', 'poop scooper', 'web developper'];
+const professionArr = ['doctor', 'actor', 'professor', 'pharmacist', 'hacker', 'samurai', 'skipper', 'flame eater', 'poop scooper', 'web developper'];
 const pastTenseVerbArr = ['ate', 'jostled', 'meditated', 'urinated', 'wrote a novel', 'coded', 'drove', 'tweeted', 'instagramed', 'burned'];
 const adverbArr = ['exquisitely', 'jovially', 'intensly', 'passionately', 'humbly', 'aggressively', 'discretely', 'inconsiderately', 'flawlessly', 'lewdly'];
 const containerArr = ['dumpster', 'bathroom', 'kitchen', 'RV', 'theater', 'White House', 'boudoir', 'office', 'fish tank', 'space station'];
