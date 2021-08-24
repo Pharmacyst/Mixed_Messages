@@ -11,11 +11,26 @@ words into the sentence, then returns the sentence. */
 //console.log('This runs in Node');
 
 //Creating arrays for the message components
-const adjective = ['jovial', 'rustic', 'flatulent', 'easy going', 'cultured', 'sycophantic', 'determined', 'gargantuan', 'short', 'handsome'];
-const profession = ['doctor', 'pornstar', 'professor', 'pharmacist', 'hacker', 'samurai', 'skipper', 'flame eater', 'poop scooper', 'web developper'];
-const past_tense_verb = ['ate', 'jostled', 'meditated', 'urinated', 'wrote a novel', 'coded', 'drove', 'tweeted', 'instagramed', 'burned'];
-const adverb = ['exquisitely', 'jovially', 'intensly', 'passionately', 'humbly', 'aggressively', 'discretely', 'inconsiderately', 'flawlessly', 'lewdly'];
-const container = ['dumpster', 'bathroom', 'kitchen', 'RV', 'theater', 'White House', 'boudoir', 'office', 'fish tank', 'space station'];
+const adjectiveArr = ['jovial', 'rustic', 'flatulent', 'easy going', 'cultured', 'sycophantic', 'determined', 'gargantuan', 'short', 'handsome'];
+const professionArr = ['doctor', 'pornstar', 'professor', 'pharmacist', 'hacker', 'samurai', 'skipper', 'flame eater', 'poop scooper', 'web developper'];
+const pastTenseVerbArr = ['ate', 'jostled', 'meditated', 'urinated', 'wrote a novel', 'coded', 'drove', 'tweeted', 'instagramed', 'burned'];
+const adverbArr = ['exquisitely', 'jovially', 'intensly', 'passionately', 'humbly', 'aggressively', 'discretely', 'inconsiderately', 'flawlessly', 'lewdly'];
+const containerArr = ['dumpster', 'bathroom', 'kitchen', 'RV', 'theater', 'White House', 'boudoir', 'office', 'fish tank', 'space station'];
+
+//Initialize variables for message elements
+let adjective = '';
+let profession = '';
+let pastTenseVerb = '';
+let adverb = '';
+let containter = '';
 
 //Creating random number generator function
+// Generates a random number between 0 and 9 (The element arrays contain 10 items each)
+function randomIndex() {
+   return Math.floor(Math.random() *10);
+}
 
+//Testing random number generator
+//console.log(randomIndex());
+
+function generateMessage()
