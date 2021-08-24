@@ -33,7 +33,7 @@ function randomIndex() {
 //Testing random number generator
 //console.log(randomIndex());
 
-//Generate message by first generating random indices, using these to select words from the arrays, then concatenating into the message
+//Generate message by invoking function with indices, using these to select words from the arrays, then concatenating into the message
 function generateMessage(index1, index2, index3, index4, index5) {
     adjective = adjectiveArr[index1];
     profession = professionArr[index2];
@@ -42,4 +42,6 @@ function generateMessage(index1, index2, index3, index4, index5) {
     container = containerArr[index5];
     return `The ${adjective} ${profession} ${pastTenseVerb} ${adverb} in the ${container}.`
 }
-console.log(generateMessage(1,1,1,1,1));
+
+// Log random message to console using random index generator to generate arguments for the generateMessage function
+console.log(generateMessage(randomIndex(),randomIndex(),randomIndex(),randomIndex(),randomIndex()));
